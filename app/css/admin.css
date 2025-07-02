@@ -1,0 +1,122 @@
+.notificacion {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 12px 24px;
+    border-radius: 4px;
+    color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    animation: slideIn 0.3s ease-out;
+    z-index: 1000;
+}
+
+.notificacion.success {
+    background-color: #4CAF50; /* Verde */
+}
+
+.notificacion.error {
+    background-color: #F44336; /* Rojo */
+}
+
+@keyframes slideIn {
+    from { transform: translateX(100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+/* Estilos generales de la tabla */
+.registros-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Cabecera de la tabla */
+.registros-table thead tr {
+    background-color: #4361ee; /* Color primario */
+    color: white;
+    text-align: left;
+}
+
+.registros-table th,
+.registros-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/* Filas alternas */
+.registros-table tbody tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+/* Hover effect */
+.registros-table tbody tr:hover {
+    background-color: #f1f3ff;
+    transition: background-color 0.3s ease;
+}
+
+/* Estados de los registros */
+.status-cell {
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    letter-spacing: 0.5px;
+}
+
+.status-pending {
+    color: #ff9800; /* Naranja */
+    background-color: #fff3e0;
+    padding: 5px 10px;
+    border-radius: 12px;
+    display: inline-block;
+}
+
+.status-used {
+    color: #4caf50; /* Verde */
+    background-color: #e8f5e9;
+    padding: 5px 10px;
+    border-radius: 12px;
+    display: inline-block;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .registros-table {
+        display: block;
+        overflow-x: auto;
+    }
+    
+    .registros-table td {
+        min-width: 120px;
+    }
+}
+
+#loadingIndicator {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #4361ee;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 50px;
+    display: none; /* Inicialmente oculto */
+    align-items: center;
+    gap: 10px;
+    z-index: 1000;
+}
+
+#loadingIndicator.active {
+    display: flex; /* Mostrar cuando tenga la clase */
+}
+
+#loadingIndicator .spinner {
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top-color: white;
+    animation: spin 1s linear infinite;
+}

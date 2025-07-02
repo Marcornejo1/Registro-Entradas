@@ -11,8 +11,7 @@ try {
         "TestDB"
     );
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    echo "✅ ¡Conexión exitosa a SQL Server!";
 } catch (PDOException $e) {
-    echo "❌ Error de conexión: " . $e->getMessage();
+    throw new PDOException("Error de conexión: " . $e->getMessage());
 }
 ?>

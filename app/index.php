@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <title>Registro de Visitas</title>
   <!-- CDN QR -->
@@ -10,7 +9,6 @@
   <!-- Estilos -->
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/variables.css">
-
 </head>
 
 <body>
