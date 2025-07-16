@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Registro de Visitas</title>
   <!-- CDN QR -->
@@ -35,6 +36,9 @@
       <h3>Tu código de acceso</h3>
       <!-- QR se generará aquí -->
     </div>
+    <button id="downloadQR" class="btn-download" disabled>
+      ⬇️ Descargar QR
+    </button>
   </div>
 </body>
 

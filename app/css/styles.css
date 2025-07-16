@@ -138,3 +138,33 @@ body {
         max-width: 100%;
     }
 }
+
+/* Botón de descarga */
+.btn-download {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn-download:hover {
+    background-color: #45a049;
+}
+
+.btn-download:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+.btn-download svg {
+    width: 16px;
+    height: 16px;
+    fill: currentColor;
+}
