@@ -1,0 +1,20 @@
+:root {
+    /* Colores */
+    --primary: #4361ee;       /* Azul vibrante */
+    --secondary: #3f37c9;     /* Azul oscuro */
+    --success: #4cc9f0;       /* Verde azulado */
+    --danger: #f72585;        /* Rosado */
+    --light: #f8f9fa;         /* Gris claro */
+    --dark: #212529;         /* Gris oscuro */
+    
+    /* Tipografía */
+    --font-main: 'Roboto', sans-serif;
+    --font-size: 16px;
+    
+    /* Espaciados */
+    --spacing: 1rem;
+    --border-radius: 0.5rem;
+    
+    /* Sombras */
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
