@@ -29,6 +29,11 @@
         <input type="email" id="email" name="email" class="form-control" required>
       </div>
 
+      <div class="form-group">
+        <label for="usos">Personas</label>
+        <input type="number" id="usos" name="usos" class="form-control" placeholder="0" required>
+      </div>
+
       <button type="submit" class="btn">Generar QR</button>
     </form>
 
